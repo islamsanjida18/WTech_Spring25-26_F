@@ -1,0 +1,34 @@
+body{
+font-family: Arial, sans-serif;
+text-align: center;
+margin: 0;
+background:#f2f2f2;
+}
+
+header{
+background:#333;
+color:white;
+padding: 20px;
+}
+
+.container{
+margin-top: 40px;
+}
+
+fieldset{
+width: 300px;
+margin: 0 auto;
+padding: 20px;
+border: 2px solid black;
+background:white;
+}
+
+legend{
+font-weight: bold;
+text-align: left;
+}
+
+input{
+padding:8px;
+width:160px;
+}
