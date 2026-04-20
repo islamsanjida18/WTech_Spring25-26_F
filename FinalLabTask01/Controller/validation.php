@@ -30,7 +30,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST")
                             $_SESSION["UserName"] = $name;
                             setcookie("UserName", $name, time()+3600, "/");
 
-                            echo "✅ Login Successful <br>";
+                            echo "Login Successful <br>";
                             echo "Welcome, " . $name;
                             break;
                         }
@@ -39,7 +39,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST")
 
                 if(!$found)
                 {
-                    echo "❌ Invalid username or password";
+                    echo "Invalid username or password";
                 }
             }
             else
@@ -60,7 +60,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST")
 
 if(isset($_SESSION["UserName"]) || isset($_COOKIE["UserName"]))
 {
-    echo "<br>👋 Welcome Back!";
+    echo "<br> Welcome Back!";
 }
 else
 {
