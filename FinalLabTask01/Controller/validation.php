@@ -23,7 +23,6 @@ if($_SERVER["REQUEST_METHOD"]=="POST")
                 {
                     if($user["name"] == $name)
                     {
-                        // Verify password
                         if(password_verify($password, $user["password"]))
                         {
                             $found = true;
@@ -59,7 +58,6 @@ if($_SERVER["REQUEST_METHOD"]=="POST")
     }
 }
 
-// Session / Cookie check
 if(isset($_SESSION["UserName"]) || isset($_COOKIE["UserName"]))
 {
     echo "<br>👋 Welcome Back!";
